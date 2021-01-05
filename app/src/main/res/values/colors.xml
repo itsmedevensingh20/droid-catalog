@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="colorWhite">#FFFF</color>
+    <color name="colorBlack">#000000</color>
+
+    <color name="colorBackground">#303030</color>
+    <color name="colorAppBar">#303841</color>
+
+    <color name="color_text">#303841</color>
+    <color name="color_heading">#303030</color>
+
+
+    <color name="colorTextBlue">#4285F4</color>
+
+    <color name="view_home_toolbar">#bfbfbf</color>
+
+</resources>

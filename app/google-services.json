@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "774298785306",
+    "firebase_url": "https://droidinsight-catalog.firebaseio.com",
+    "project_id": "droidinsight-catalog",
+    "storage_bucket": "droidinsight-catalog.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:774298785306:android:b6dc9a85ebc73e61dbe3a3",
+        "android_client_info": {
+          "package_name": "com.droidinsight.catalog"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "774298785306-eeknfd0ggrq0ppc0elr1feh9ctihme7k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiANBMF1_VPaK7UTGMq2gU2cWKdOP_rGQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "774298785306-eeknfd0ggrq0ppc0elr1feh9ctihme7k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

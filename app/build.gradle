@@ -1,0 +1,99 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'kotlin-android-extensions'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "com.droidinsight.catalog"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 2
+        versionName "1.02"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    dataBinding {
+        enabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_stdlib"
+    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    testImplementation 'junit:junit:4.13.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    // =====   Room Component   =====
+    kapt "androidx.room:room-compiler:$room"
+    implementation "androidx.room:room-runtime:$room"
+    testImplementation "androidx.room:room-testing:$room"
+
+    //=====   SDP LIBRARY   =====
+    implementation "com.intuit.sdp:sdp-android:$sdp_android_version"
+
+    // =====   Koin dependencies   =====
+    implementation "org.koin:koin-android:$koin"
+    implementation "org.koin:koin-androidx-viewmodel:$koin"
+    implementation "org.koin:koin-core:$koin"
+
+    //=====Material Design=====
+    implementation "com.google.android.material:material:$material_design"
+
+    // =====LiveData & ViewModel=====
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$livedata_viewmodel_version"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$livedata_viewmodel_version"
+
+    // =====   All Permission   =====
+    implementation "com.nabinbhandari.android:permissions:$nabinbhandari"
+
+    // =====   MultiDex   =====
+    implementation "com.android.support:multidex:$multidex"
+
+    //=====Glide=====
+    implementation "com.github.bumptech.glide:glide:$glide_version"
+
+    //=====   FireBase Database   =====
+    implementation "com.google.firebase:firebase-database:$firebase_database"
+
+    //=====   FireBase Storage   =====
+    implementation "com.google.firebase:firebase-storage:$firebase_storage"
+
+    implementation platform('com.google.firebase:firebase-bom:26.1.1')
+
+    //=====   FireBase Analytics   =====
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+
+    // =====   Matisse   =====
+    implementation "com.zhihu.android:matisse:$matisse"
+
+
+    //=====   FireBase Admob   =====
+    implementation "com.google.android.gms:play-services-ads:$firebase_admob"
+
+
+}

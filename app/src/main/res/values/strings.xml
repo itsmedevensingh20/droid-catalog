@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Droid Catalog</string>
+    <string name="droid_insight">droidinsight.com</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <!--Error Messages-->
+    <string name="error_internet">Please check your internet connection</string>
+    <string name="something_went_wrong">Something went wrong</string>
+
+
+    <string name="open">open</string>
+    <string name="close">close</string>
+
+
+    <string name="home_page">Home Page</string>
+    <string name="our_website">Our Website</string>
+    <string name="about_us">About us</string>
+    <string name="share_app">Share App</string>
+    <string name="exit">Exit</string>
+    <string name="more_app">Download Our More App</string>
+    <string name="rate_us">Rate US</string>
+    <string name="android">Android</string>
+    <string name="flutter">Flutter</string>
+    <string name="tutorials">Tutorials</string>
+    <string name="top_post">Top Post</string>
+    <string name="latest_blog">Latest Blog</string>
+    <string name="back_press_exit">Please press back again to Exit</string>
+
+    <!--Google Admob-->
+
+    <string name="admob_app_id">ca-app-pub-2191936322761154~1334467089</string>
+    <string name="banner_home_footer">ca-app-pub-2191936322761154/4232077257</string>
+
+
+    <string name="android_tutorial">Android Tutorial</string>
+    <string name="upload">upload</string>
+    <string name="select_image">Select Image</string>
+    <string name="admin">Admin</string>
+    <string name="android_n_widgets">Android\nWidgets</string>
+    <string name="flutter_n_widgets">Flutter\nWidgets</string>
+    <string name="popular_blogs">Popular Blogs</string>
+    <string name="widgets">Widgets</string>
+
+</resources>

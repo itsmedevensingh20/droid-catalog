@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="adminViewModel"
+            type="com.droidinsight.catalog.admin.AdminViewModel" />
+
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/adminParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:context=".admin.AdminActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:fontFamily="@font/opensans_bold"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/top_post"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_20sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="RtlCompat" />
+
+            <ImageView
+                android:id="@+id/userImages"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:padding="@dimen/_2sdp"
+                android:scaleType="fitXY"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text"
+                tools:ignore="ContentDescription"
+                tools:src="@tools:sample/avatars" />
+
+            <EditText
+                android:id="@+id/typeMessage"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:hint="Enter Heading"
+                android:inputType="text"
+                android:maxLines="8"
+                android:minLines="1"
+                android:padding="@dimen/_3sdp"
+                android:scrollbarSize="@dimen/_2sdp"
+                android:scrollbars="horizontal"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@id/userImages"
+                app:layout_constraintStart_toStartOf="@id/userImages"
+                app:layout_constraintTop_toBottomOf="@id/userImages"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/typeURL"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:hint="Enter URL"
+                android:inputType="textUri"
+                android:maxLines="8"
+                android:minLines="1"
+                android:padding="@dimen/_3sdp"
+                android:scrollbarSize="@dimen/_2sdp"
+                android:scrollbars="horizontal"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@id/userImages"
+                app:layout_constraintStart_toStartOf="@id/userImages"
+                app:layout_constraintTop_toBottomOf="@id/typeMessage"
+                tools:ignore="Autofill" />
+
+            <Button
+                android:id="@+id/uploadTopPost"
+                style="@style/BlueRoundedCornerButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/colorAppBar"
+                android:text="@string/upload"
+                android:textAllCaps="true"
+                app:layout_constraintEnd_toEndOf="@id/userImages"
+                app:layout_constraintStart_toEndOf="@id/selectTopPost"
+                app:layout_constraintTop_toBottomOf="@id/typeURL">
+
+            </Button>
+
+            <Button
+                android:id="@+id/selectTopPost"
+                style="@style/BlueRoundedCornerButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/colorAppBar"
+                android:text="@string/select_image"
+                android:textAllCaps="true"
+                app:layout_constraintEnd_toStartOf="@id/uploadTopPost"
+                app:layout_constraintStart_toStartOf="@id/userImages"
+                app:layout_constraintTop_toBottomOf="@id/typeURL">
+
+            </Button>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</layout>
